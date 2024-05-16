@@ -1,0 +1,14 @@
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\bin\Debug\net6.0\ex8.exe
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\bin\Debug\net6.0\ex8.deps.json
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\bin\Debug\net6.0\ex8.runtimeconfig.json
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\bin\Debug\net6.0\ex8.dll
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\bin\Debug\net6.0\ex8.pdb
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.AssemblyInfoInputs.cache
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.AssemblyInfo.cs
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.csproj.CoreCompileInputs.cache
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.dll
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\refint\ex8.dll
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.pdb
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ex8.genruntimeconfig.cache
+C:\Users\lab1-aluno\Desktop\exerciciosSWpt2\ex8\ex8\obj\Debug\net6.0\ref\ex8.dll
