@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Clientes";
+}
+
+<h1>Lista de Clientes</h1>
+
+<div>
+    <a role="button" class="btn btn-primary" asp-controller="Cliente" asp-action="Adicionar">Adicionar</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto@email.com</td>
+            <td>(11)98430-4328</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Cliente" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Cliente" asp-action="Apagar">Apagar</a>
+                </div>
+            </td>
+        </tr>   
+    </tbody>
+</table>
