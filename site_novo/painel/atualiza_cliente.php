@@ -16,11 +16,11 @@
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
+                                            <th>ID</th>
+                                            <th>NOME</th>
+                                            <th>EMAIL</th>
+                                            <th>TELEFONE</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tfoot>
