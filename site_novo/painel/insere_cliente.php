@@ -3,60 +3,27 @@
 
     include 'menu.php';
 ?>
-
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">INSERIR NOVO CLIENTE</h1>
-                        <ol class="breadcrumb mb-4" >
-                            <li class="breadcrumb-item">
-                                <a href="" class="btn btn-success">INSERIR NOVO CLIENTE</a>
-                            </li>
-                        </ol>
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                        </tr>
-                                    </tfoot>
-
-                                
-                                    <tbody>
-                                    <?php
-                                        $sql = "SELECT * FROM cadastro";
-                                        $consulta = $conexao->query($sql);
-                                        while($dados = $consulta->fetch_assoc()){
-                                            echo "<tr>";
-                                            echo "<td>".$dados['id_cliente'].".<br>";
-                                            echo "<td>".$dados['nome_cliente'].".<br>";
-                                            echo "<td>".$dados['email_cliente'].".<br>";
-                                            echo "<td>".$dados['telefone'].".<br>";
-                                            echo "<td>
-                                                <a class='btn btn-info  ' href=''>ATUALIZAR</a>
-                                                <a class='btn btn-danger' href=''>APAGAR</a>
-                                            
-                                            ";
-                                            echo "</tr>";
-                                        }
-                                    
-                                    
-                                    ?>   
-                                    </tbody>
-                                </table>
-                            </div>
+                                               
+                        <div class="card mb-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Nome</label>
+                                    <input type="text" class="form-control">                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control">                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Telefone</label>
+                                    <input type="text" class="form-control">                                    
+                                </div>                                
+                                <button type="submit" class="btn btn-primary">CADASTRAR</button>
+                            </form>
                         </div>
                     </div>
                 </main>

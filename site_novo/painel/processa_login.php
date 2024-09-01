@@ -5,21 +5,22 @@
 
     $consulta = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 
-    
-
     $resultado = $conexao->query($consulta);
     $registros = $resultado->num_rows;
     $resultado_usuario = mysqli_fetch_assoc($resultado);
+    
+    //var_dump($resultado_usuario);
 
-    // var_dump($resultado_usuario);
-
-    if($registros<>0){
-        // echo "TE ACHEI";
-
+    if($registros == 1){
+        //echo "TE ACHEI";       
         header('Location: index.php');
+
     }
     else{
-        // echo "NÃO TE ACHEI";
+        //echo "NÃO ACHEI";        
         header('Location: ../index.html');
     }
+
+
+
 ?>
