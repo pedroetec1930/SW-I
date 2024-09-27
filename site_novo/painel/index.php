@@ -1,8 +1,6 @@
 <?php
     session_start();
-    if( (!isset($_SESSION['id']) == true) && 
-    (!isset($_SESSION['nome']) == true) && 
-    (!isset($_SESSION['email']) == true) ){
+    if((!isset($_SESSION['id']) == true) and (!isset($_SESSION['nome']) == true) and (!isset($_SESSION['email']) == true)){
         unset($_SESSION['id']);
         unset($_SESSION['nome']);
         unset($_SESSION['email']);
@@ -10,13 +8,9 @@
     }
 
 
-
     include 'conecta.php';
     include 'menu.php';
 ?>
-
-
-
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
@@ -36,40 +30,38 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>NOME</th>
-                                            <th>E-MAIL</th>
-                                            <th>TELEFONE</th>
-                                            <th>OPÇÕES</th>                                            
+                                            <th>Nome</th>
+                                            <th>Email</th>
+                                            <th>Telefone</th>
+                                            <th>Opções</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>NOME</th>
-                                            <th>E-MAIL</th>
-                                            <th>TELEFONE</th>
-                                            <th>OPÇÕES</th> 
+                                            <th>Nome</th>
+                                            <th>Email</th>
+                                            <th>Telefone</th>
+                                            <th>Opções</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                    <?php
-                                        $sql = "SELECT * FROM clientes";
-                                        $consulta = $conexao->query($sql);
-                                        while($dados = $consulta->fetch_assoc()){
-                                            echo "<tr>";
-                                            echo "<td>".$dados['id_cliente']."</td>";
-                                            echo "<td>".$dados['nome_cliente']."</td>";
-                                            echo "<td>".$dados['email_cliente']."</td>";
-                                            echo "<td>".$dados['telefone']."</td>";
-                                            echo "<td>
-                                                <a class='btn btn-info' href='atualiza_cliente.php'>ATUALIZAR</a>
-                                                <a class='btn btn-danger' href=''>APAGAR</a>
-                                            </td>";
-                                            echo "</tr>";
-                                        }
-                                    ?>
-                                        
-                                        
+                                        <?php
+                                            $sql = "SELECT * FROM clientes";
+                                            $consulta = $conexao->query($sql);
+                                            while($dados = $consulta->fetch_assoc()){
+                                                echo "<tr>";
+                                                echo "<td>".$dados['id_cliente']."</td>";
+                                                echo "<td>".$dados['nome_cliente']."</td>";
+                                                echo "<td>".$dados['email_cliente']."</td>";
+                                                echo "<td>".$dados['telefone']."</td>";
+                                                echo "<td>
+                                                    <a class='btn btn-info' href='atualiza_cliente.php?id=".$dados['id_cliente']."'>ATUALIZAR</a>                             
+                                                    <a class='btn btn-danger' href='processa_deleta_cliente.php?id=".$dados['id_cliente']."'>APAGAR</a>
+                                                </td>";
+                                                echo "</tr>";
+                                            }
+                                        ?>
                                     </tbody>
                                 </table>
                             </div>

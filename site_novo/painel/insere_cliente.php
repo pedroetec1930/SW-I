@@ -9,18 +9,18 @@
                         <h1 class="mt-4">INSERIR NOVO CLIENTE</h1>
                                                
                         <div class="card mb-4">
-                            <form>
+                            <form action="processa_insere_cliente.php" method="POST">
                                 <div class="mb-3">
                                     <label class="form-label">Nome</label>
-                                    <input type="text" class="form-control">                                    
+                                    <input name="nome" type="text" class="form-control">                                    
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Email</label>
-                                    <input type="email" class="form-control">                                    
+                                    <input name="email" type="email" class="form-control">                                    
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Telefone</label>
-                                    <input type="text" class="form-control">                                    
+                                    <input name="telefone" type="text" class="form-control">                                    
                                 </div>                                
                                 <button type="submit" class="btn btn-primary">CADASTRAR</button>
                             </form>
